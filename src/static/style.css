@@ -1,128 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-
 }
-
-.cabecalho{
-    background-color: #F5F5DC;
-    height: 70px;
-    padding:  0 40px;
-    display: flex;
-    align-items: center;
-    
-    
-}
-
-
-.menu-principal{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.links-direita{
-    margin-left: auto;
-    display: flex;
-    gap: 30px;
-}
-.menu-principal a{
-    color: #444;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-
-
-}
-
 
 body {
     background-image: url(../img/fundo.png);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-color: #F8F8F8; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+}
+
+.cabecalho {
+    background-color: #ffffea;
+    height: 70px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-principal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.links-direita {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.menu-principal a {
+    color: #444;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 #main-sobre {
-   
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 40px 40px 80px 40px;
     width: 100%;
-    
 }
-
 
 #main-txt {
-    
-    flex: 1; 
-    max-width: 55%; 
+    flex: 1;
+    max-width: 55%;
 }
 
-
 #main-img {
-
     flex: 1;
-    max-width: 25%; 
-    text-align: right; 
-    border: 15px solid transparent; 
-    box-shadow: 0 0 0 2px #D4AF37; 
+    max-width: 25%;
+    text-align: right;
+    border: 15px solid transparent;
+    box-shadow: 0 0 0 2px #D4AF37;
     overflow: hidden;
 }
 
-
 #main-img img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    
 }
 
 #main-txt h2 {
     font-size: 5em;
     color: #333;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    margin-bottom: -0.1em;
+}
+
+.titulo-linha-2 {
+    white-space: nowrap;
 }
 
 #main-txt h3 {
     font-size: 2em;
     color: #333;
-    font-family: serif;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
 }
 
-#card{
+#card {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
+    padding: 80px 20px;
 }
-.main-card{
+
+.main-card {
     background-color: #ffffff;
     width: 300px;
-    height: 450px;
     flex: 1;
     padding: 20px;
-    margin-right: 20px;
+    margin: 0 15px;
     border: 1px solid #ccc;
-    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.main-card h2 {
+    margin-top: 15px;
+    color: #404039;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.main-card h3 {
+    margin-top: 10px;
+    color: #292924;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.6;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
-.main-card h2{
-    margin-top: 200px;
-    color:  #404039;
+.main-card img {
+    max-width: 100%;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 5px;
+    border-radius: 8px 8px 0 0;
 }
-
-.main-card h3{
-    margin-top: 20px;
-    color:  #292924;
-}
-
-
 
 .dep-div {
     background-color: #FDF9F0;
@@ -133,45 +154,56 @@ body {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 50px auto;
+    margin-top: 50px;
     text-align: center;
 }
 
 .depoimentos-div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     flex: 1;
     min-width: 280px;
     max-width: 350px;
     padding: 30px;
     background-color: #FFFFFF;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .depoimentos-div h2 {
     font-size: 1.5em;
     color: #333;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .depoimentos-div h3 {
     font-size: 1.1em;
-    color: #666;
-    margin-bottom: 20px;
+    color: #868686;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
 }
 
-#depoimentos{
+#depoimentos {
     background-color: #FFFFFF;
 }
 
 .depoimentos-div img {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-bottom: 20px; 
-    border: 3px solid #D4AF37; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #D4AF37;
+    align-self: center;
 }
 
 #hotmark {
@@ -194,13 +226,14 @@ body {
     letter-spacing: 1px;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
 }
 
 .botao-link:hover {
     background-color: #7a6549;
 }
 
-.contatos{
+.contatos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -208,16 +241,194 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-
 }
 
-.contatos img{
+.contatos img {
     width: 100px;
     height: auto;
-
-
 }
 
-.contatos img:hover{
+.contatos img:hover {
     transform: scale(1.1);
+}
+
+#footer-div {
+    align-items: center;
+}
+
+#footer-div p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    color: #818080;
+}
+
+/* ======================================================= */
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+/* ======================================================= */
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 0 20px;
+    }
+
+    .links-direita {
+        gap: 15px;
+    }
+
+    .menu-principal a {
+        font-size: 18px;
+    }
+
+    #main-sobre {
+        flex-direction: column; 
+        padding: 30px 20px 60px 20px;
+        text-align: center; 
+    }
+
+    #main-txt {
+        max-width: 100%; 
+        margin-bottom: 30px; 
+    }
+
+    #main-img {
+        max-width: 80%; 
+        text-align: center;
+        border: 10px solid transparent; 
+    }
+
+    #main-txt h2 {
+        font-size: 3.5em; 
+    }
+    
+    .titulo-linha-2 {
+        white-space: nowrap;
+    }
+
+    #main-txt h3 {
+        font-size: 1.5em; 
+    }
+
+    #card {
+        flex-direction: column; 
+        padding: 50px 20px;
+        gap: 30px; 
+    }
+
+    .main-card {
+        width: 90%; 
+        margin: 0 auto; 
+        max-width: 400px; 
+    }
+    
+    .main-card h3 {
+        text-align: center;
+    }
+
+    .main-card img {
+        height: 150px; 
+    }
+
+    .dep-div {
+        padding: 50px 20px;
+        gap: 20px;
+        margin-top: 30px; 
+    }
+
+    .depoimentos-div {
+        min-width: unset; 
+        max-width: 90%; 
+    }
+
+    .botao-link {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    .contatos img {
+        width: 80px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .links-direita {
+        gap: 10px;
+    }
+
+    .menu-principal a {
+        font-size: 16px;
+    }
+
+    #main-sobre {
+        padding: 20px 15px 40px 15px;
+    }
+
+    #main-img {
+        max-width: 95%; 
+        border: 5px solid transparent;
+    }
+
+    #main-txt h2 {
+        font-size: 2.5em; 
+    }
+    
+    .titulo-linha-2 {
+        white-space: nowrap;
+    }
+
+    #main-txt h3 {
+        font-size: 1.2em; 
+    }
+
+    #card {
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .main-card {
+        width: 100%; 
+        margin: 0 auto;
+    }
+    
+    .main-card h3 {
+        text-align: center;
+    }
+
+    .main-card img {
+        height: 120px;
+    }
+
+    .dep-div {
+        padding: 40px 15px;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .depoimentos-div {
+        max-width: 100%; 
+        padding: 20px;
+    }
+
+    .depoimentos-div img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .botao-link {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    .contatos img {
+        width: 60px;
+    }
+
+    #footer-div p {
+        font-size: 0.8em;
+    }
 }
